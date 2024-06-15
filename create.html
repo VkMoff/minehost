@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создайте свой сервер</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a href="main.html" class="logo-button">
+            <div>
+                <img class="logo" src="svgs/minetest-svgrepo-com.svg" alt="logo" width="60px" height="60px"><p>MineHost</p>
+            </div>
+        </a>
+        <div class="header__container">
+            <a href="./main.html" class="header__link"><p>На главную</p></a>
+            <a href="#" class="header__link"><p>Помощь</p></a>
+            <a href="#" class="header__link"><p>Панель управления</p></a>
+            <a href="#" class="create-button"><p>Создать</p></a>
+        </div>
+    </header>
+
+
+
+    <form class="create__form" action="./myservers.html">
+
+    <article class="create__server-list">
+
+        <section class="main__tariffs">
+            <input type="radio" id="Земля" name="type-of-server">
+            <label for="Земля" class="main__tariff_small">
+                <img src="./imgs/dirt.jpg" alt="" width="40px" height="40px">
+                <h3>Земля</h3>
+                <ul>
+                    <li>500МБ ОЗУ</li>
+                    <li>1ГБ дискового пространства</li>
+                    <li>50% vCPU</li>
+                    <li>50₽/мес.</li>
+                </ul>
+            </label>
+            <input type="radio" id="Дерево" name="type-of-server">
+            <label for="Дерево" class="main__tariff_small">
+                <img src="./imgs/wood.jpg" alt="" width="40px" height="40px">
+                <h3>Дерево</h3>
+            <ul>
+                <li>1.5ГБ ОЗУ</li>
+                <li>2ГБ дискового пространства</li>
+                <li>75% vCPU</li>
+                <li>200₽/мес.</li>
+            </ul>
+        </label>
+        <input type="radio" id="Камень" name="type-of-server">    
+        <label for="Камень" class="main__tariff_small">
+                <img src="./imgs/stone.jpg" alt="" width="40px" height="40px">
+                <h3>Камень</h3>
+            <ul>
+                <li>2ГБ ОЗУ</li>
+                <li>5ГБ дискового пространства</li>
+                <li>100% vCPU</li>
+                <li>250₽/мес.</li>
+            </ul>
+        </label>
+        <input type="radio" id="Уголь" name="type-of-server">    
+        <label for="Уголь" class="main__tariff_small">
+                <img src="./imgs/coal.jpg" alt="" width="40px" height="40px">
+                <h3>Уголь</h3>
+            <ul>
+                <li>4ГБ ОЗУ</li>
+                <li>10ГБ дискового пространства</li>
+                <li>150% vCPU</li>
+                <li>300₽/мес.</li>
+            </ul>
+        </label>
+        <input type="radio" id="Железо" name="type-of-server">    
+        <label for="Железо" class="main__tariff_small">
+                <img src="./imgs/iron.png" alt="" width="40px" height="40px">
+                <h3>Железо</h3>
+            <ul>
+                <li>6ГБ ОЗУ</li>
+                <li>15ГБ дискового пространства</li>
+                <li>200% vCPU</li>
+                <li>400₽/мес.</li>
+            </ul>
+        </label>
+        <input type="radio" id="Золото" name="type-of-server">    
+        <label for="Золото" class="main__tariff_small">
+                <img src="./imgs/gold.png" alt="" width="40px" height="40px">
+                <h3>Золото</h3>
+            <ul>
+                <li>8ГБ ОЗУ</li>
+                <li>20ГБ дискового пространства</li>
+                <li>225% vCPU</li>
+                <li>500₽/мес.</li>
+            </ul>
+        </label>
+        <input type="radio" id="Аметист" name="type-of-server">    
+        <label for="Аметист" class="main__tariff_small">
+                <img src="./imgs/amethyst.png" alt="" width="40px" height="40px">
+                <h3>Аметист</h3>
+            <ul>
+                <li>10ГБ ОЗУ</li>
+                <li>30ГБ дискового пространства</li>
+                <li>250% vCPU</li>
+                <li>550₽/мес.</li>
+            </ul>
+        </label>
+        <input type="radio" id="Изумруд" name="type-of-server">    
+        <label for="Изумруд" class="main__tariff_small">
+                <img src="./imgs/emerald.jpg" alt="" width="40px" height="40px">
+                <h3>Изумруд</h3>
+            <ul>
+                <li>12ГБ ОЗУ</li>
+                <li>40ГБ дискового пространства</li>
+                <li>275% vCPU</li>
+                <li>600₽/мес.</li>
+            </ul>
+        </label>
+        <input type="radio" id="Алмаз" name="type-of-server">    
+        <label for="Алмаз" class="main__tariff_small">
+                <img src="./imgs/diamond.jpg" alt="" width="40px" height="40px">
+                <h3>Алмаз</h3>
+            <ul>
+                <li>14ГБ ОЗУ</li>
+                <li>50ГБ дискового пространства</li>
+                <li>300% vCPU</li>
+                <li>700₽/мес.</li>
+            </ul>
+        </label>
+        <input type="radio" id="Обсидиан" name="type-of-server">    
+        <label for="Обсидиан" class="main__tariff_small">
+                <img src="./imgs/obsidian.webp" alt="" width="40px" height="40px">
+                <h3>Обсидиан</h3>
+            <ul>
+                <li>16ГБ ОЗУ</li>
+                <li>50ГБ дискового пространства</li>
+                <li>325% vCPU</li>
+                <li>800₽/мес.</li>
+            </ul>
+        </label>
+        <input type="radio" id="Незерит" name="type-of-server">    
+        <label for="Незерит" class="main__tariff_small">
+                <img src="./imgs/637703912889393199.png" alt="" width="40px" height="40px">
+                <h3>Незерит</h3>
+            <ul>
+                <li>20ГБ ОЗУ</li>
+                <li>50ГБ дискового пространства</li>
+                <li>350% vCPU</li>
+                <li>1000₽/мес.</li>
+            </ul>
+        </label>
+        <input type="radio" id="Бедрок" name="type-of-server">    
+        <label for="Бедрок" class="main__tariff_small">
+                <img src="./imgs/bedrock_5105336.jpg" alt="" width="40px" height="40px">
+                <h3>Бедрок</h3>
+            <ul>
+                <li>24ГБ ОЗУ</li>
+                <li>100ГБ дискового пространства</li>
+                <li>400% vCPU</li>
+                <li>1500₽/мес.</li>
+            </ul>
+        </label>
+        </section>
+
+
+
+        <aside>
+                <input type="text" name="name" id="name_input" placeholder="Название сервера...">
+                <p>Количество портов</p>
+                <input type="number" min="0" max="12" value="0">
+                <p>Количество баз данных</p>
+                <input type="number" min="0" max="12" value="0">
+                <div style="display: flex; padding: 20px 0;">
+                    <input type="checkbox" name="" id="offer" style="width: 20px;">
+                    <label for="offer">Я ознакомлен и согласен с офертой</label>
+                </div>
+                <select class="create__time">
+                    <option>На месяц</option>
+                    <option>На 3 месяца [-10%]</option>
+                    <option>На полгода [-15%]</option>
+                    <option>На год [-20%]</option>
+                </select>
+                <p id="selectedOption">Выбранный тип сервера</p>
+    
+                <button class="create-button">
+                    <p>
+                        Создать!
+                    </p>
+                </button>
+                <script>
+                    document.querySelectorAll('input[name="type-of-server"]').forEach((radio) => {
+                        radio.addEventListener('change', () => {
+                            if (radio.checked) {
+                                document.getElementById('selectedOption').textContent = radio.id;
+                            }
+                        });
+                    });
+                </script>
+
+        </aside>
+    </form>
+
+
+    
+
+</article>
+
+
+
+
+    <footer>
+        <div class="footer__logo">
+            <a href="#" class="logo-button">
+                <div>
+                    <img class="logo" src="svgs/minetest-svgrepo-com.svg" alt="logo" width="100px" height="100px"><p>MineHost</p>
+                </div>
+            </a>
+            <p>Все права защищены</p>
+            <p>Содержимое страницы не является публичной офертой</p>
+            <p>Мы никак не связаны с Minecraft®, Mojang Studios® или Microsoft®</p>
+        </div>
+        <nav>
+            <p>Навигация</p>
+            <ul>
+                <li><a href="">Главная</a></li>
+                <li><a href="">Панель управления</a></li>
+                <li><a href="">Помощь</a></li>
+            </ul>
+        </nav>
+        <div>
+            <p>Контакты</p>
+            <ul>
+                <li><a href="">ВКонтакте</a></li>
+                <li><a href="">Discord</a></li>
+                <li><a href="">Telegram</a></li>
+            </ul>
+        </div>
+        <div>
+            <p>Документы</p>
+            <ul>
+                <li><a href="">Пользовательское соглашение</a></li>
+                <li><a href="">Политика конфиденциальности</a></li>
+                <li><a href="">Оферта</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>
